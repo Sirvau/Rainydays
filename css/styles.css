@@ -1,0 +1,245 @@
+@font-face {
+  font-family: "Montserrat", sans-serif, verdana;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Bebas Neue", "Montserrat", "sans-serif";
+  src: url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,500;1,900&display=swap")
+    format("truetype");
+}
+
+/*Universal styles
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+body {
+  font-family: "Montserrat", "sans-serif", "verdana";
+  background-color: rgba(5, 19, 30, 1);
+  color: rgba(205, 208, 212, 1);
+  font-size: 1rem;
+}
+
+.logo {
+  max-width: 100%;
+  min-width: 100px;
+  height: auto;
+}
+
+nav {
+  letter-spacing: 0.15em;
+  line-height: 1.875rem;
+}
+
+a,
+h1,
+h2,
+.product_price {
+  font-family: "Bebas Neue", "Montserrat", "sans-serif";
+  color: rgba(205, 208, 212, 1);
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.813rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.85rem;
+  text-align: center;
+}
+
+h3,
+.headline_medium {
+  padding: 0%;
+  font-size: 1.25rem;
+}
+
+p {
+  text-align: center;
+}
+nav a {
+  font-size: 1.563rem;
+  text-decoration: overline;
+}
+
+.headline_medium {
+  font-weight: bolder;
+}
+
+.wrap {
+  max-width: 70%;
+  height: auto;
+  background-color: rgba(46, 47, 49, 0.25);
+  padding: 3%;
+}
+
+footer {
+  background-color: rgba(46, 47, 49, 0.25);
+}
+
+/*Products*/
+.product {
+  background-color: rgba(46, 47, 49, 0.25);
+  max-width: 100%;
+  min-width: 6.25rem;
+  height: auto;
+  padding: 2%;
+}
+
+.product_name {
+  font-weight: bold;
+}
+
+.product_price {
+  font-size: 1.563rem;
+  letter-spacing: 0.15rem;
+}
+
+.large {
+  font-size: 2.5rem;
+}
+
+.icons_tablet_desktop {
+}
+
+.icons_mobile {
+}
+
+/*Buttons*/
+.button_small,
+.button_medium {
+  background-color: rgba(167, 70, 46, 1);
+  border-radius: 0.25rem;
+  font-size: 1.563rem;
+  text-align: center;
+  letter-spacing: 0.15em;
+}
+
+.button_small {
+  padding: 0.3rem 0.9rem;
+}
+
+.button_medium {
+  padding: 1rem 2rem;
+}
+
+#checkout {
+  background-color: rgba(97, 104, 52, 1);
+}
+
+.button_large {
+  background-color: rgba(97, 104, 52, 1);
+  padding: 0.75rem 2rem;
+  font-size: 2.813rem;
+  border-radius: 0.6rem;
+  min-width: 50px;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+.radiobuttons {
+}
+
+/*Images*/
+
+.image_banner {
+  background-color: rgba(97, 104, 52, 1);
+}
+.image_about {
+  padding: 20%;
+  background-image: url(../images/about_us_rainydays.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  min-width: 50px;
+  height: auto;
+}
+
+.Image_about_2 {
+  padding: 30%;
+  background-image: url(../images/About_us_2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  min-width: 50px;
+  max-height: auto;
+}
+
+.image_contact {
+  padding: 20%;
+  background-image: url(../images/contact_us__blue_mountain.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  min-width: 50px;
+  height: auto;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.image_sortiment {
+  padding: 30%;
+  background-image: url(../images/sortiment_main_picture.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  min-width: 100px;
+  height: auto;
+  background-position-x: top;
+}
+
+.product_image {
+  max-width: 50%;
+  min-width: 100px;
+  height: auto;
+}
+.image_product_in_nature {
+  max-width: 100%;
+  min-width: 100px;
+  height: 100%;
+}
+
+.image_checkout {
+  padding: 60%;
+  background-size: contain;
+  background-position-x: bottom;
+  margin: 3%;
+  margin: 0%;
+  background-image: url(../images/checkout_glacier.jpg);
+  background-repeat: no-repeat;
+  max-width: 100%;
+  min-width: 100px;
+  height: auto;
+}
+
+.image_index_iceclimbing {
+  padding: 75%;
+  background-image: url(../images/index_ice_climbing.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  min-width: 50px;
+  height: auto;
+}
+
+.image_index_man_on_mountain {
+  padding: 40%;
+  background-image: url(../images/index_man_on_mountain.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  min-width: 50px;
+  height: auto;
+}
+
+.image_index_jacket_closeup {
+  padding: 75%;
+  background-image: url(../images/kal-visuals-Td9K-kMM4SQ-unsplash.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  min-width: 50px;
+  height: auto;
+}
