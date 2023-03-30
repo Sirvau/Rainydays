@@ -101,12 +101,6 @@ footer {
   font-size: 2.5rem;
 }
 
-.icons_tablet_desktop {
-}
-
-.icons_mobile {
-}
-
 /*Buttons*/
 .button_small,
 .button_medium {
@@ -137,9 +131,6 @@ footer {
   min-width: 50px;
   text-align: center;
   letter-spacing: 0.1rem;
-}
-
-.radiobuttons {
 }
 
 /*Images*/
