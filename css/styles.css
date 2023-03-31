@@ -17,18 +17,14 @@ body {
   font-family: "Montserrat", "sans-serif", "verdana";
   background-color: rgba(5, 19, 30, 1);
   color: rgba(205, 208, 212, 1);
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
-.logo {
-  max-width: 100%;
-  min-width: 100px;
+.wrap {
+  max-width: 90%;
   height: auto;
-}
-
-nav {
-  letter-spacing: 0.15em;
-  line-height: 1.875rem;
+  background-color: rgba(46, 47, 49, 0.25);
+  padding: 3%;
 }
 
 a,
@@ -38,6 +34,8 @@ h2,
   font-family: "Bebas Neue", "Montserrat", "sans-serif";
   color: rgba(205, 208, 212, 1);
   text-decoration: none;
+  letter-spacing: 0.15rem;
+  line-height: 1.2rem;
 }
 
 h1 {
@@ -56,27 +54,8 @@ h3,
   font-size: 1.25rem;
 }
 
-p {
-  text-align: center;
-}
-nav a {
-  font-size: 1.563rem;
-  text-decoration: overline;
-}
-
 .headline_medium {
   font-weight: bolder;
-}
-
-.wrap {
-  max-width: 70%;
-  height: auto;
-  background-color: rgba(46, 47, 49, 0.25);
-  padding: 3%;
-}
-
-footer {
-  background-color: rgba(46, 47, 49, 0.25);
 }
 
 /*Products*/
@@ -116,7 +95,9 @@ footer {
 }
 
 .button_medium {
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
+  margin: 1rem;
+  display: inline-block;
 }
 
 #checkout {
@@ -138,6 +119,7 @@ footer {
 .image_banner {
   background-color: rgba(97, 104, 52, 1);
 }
+
 .image_about {
   padding: 20%;
   background-image: url(../images/about_us_rainydays.jpg);
@@ -185,6 +167,7 @@ footer {
   max-width: 50%;
   min-width: 100px;
   height: auto;
+  margin: 3%;
 }
 .image_product_in_nature {
   max-width: 100%;
@@ -233,4 +216,28 @@ footer {
   max-width: 100%;
   min-width: 50px;
   height: auto;
+}
+
+.fa-message-check {
+  color: rgba(205, 208, 212, 1);
+  font-size: 1.563rem;
+}
+
+.cirkle {
+  background-color: rgba(5, 19, 30, 1);
+  padding: 18% 6%;
+  border-radius: 90%;
+  position: absolute;
+}
+
+.fa-cc-visa,
+.fa-cc-mastercard,
+.fa-cc-paypal,
+.fa-cc-discover {
+  font-size: 2.5rem;
+  color: rgba(205, 208, 212, 1);
+}
+
+.payment {
+  padding-bottom: 5%;
 }

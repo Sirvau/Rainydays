@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Montserrat", sans-serif, verdana;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Bebas Neue", "Montserrat", "sans-serif";
+  src: url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,500;1,900&display=swap")
+    format("truetype");
+}
+
+footer {
+  background-color: rgba(46, 47, 49, 0.25);
+  font-size: 1rem;
+  padding: 10%;
+  margin-top: 5rem;
+}
+
+/*icons*------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------*/
+.fa-envelope,
+.fa-mobile-screen-button,
+.fa-instagram,
+.fa-facebook {
+  color: rgba(205, 208, 212, 1);
+  font-size: 1.563rem;
+}

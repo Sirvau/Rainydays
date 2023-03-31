@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Montserrat", sans-serif, verdana;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Bebas Neue", "Montserrat", "sans-serif";
+  src: url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,500;1,900&display=swap")
+    format("truetype");
+}
+
+input[type="name"],
+input[type="email"],
+input[type="adress"],
+input[type="text"],
+input[type="number"],
+input[type="cardnumber"],
+input[type="cvc-code"],
+textarea {
+  padding: 0.75rem;
+  margin: 0.3rem 0.75rem 1.2rem 0.75rem;
+  width: 80%;
+  border-radius: 0.25rem;
+  color: rgba(205, 208, 212, 1);
+  font-size: 1.2rem;
+  background-color: rgba(46, 47, 49, 0.25);
+  letter-spacing: 0.05rem;
+  font-family: "Montserrat", "sans-serif", "verdana";
+}
+
+input[type="text"],
+input[type="cvc-code"] {
+  width: 15%;
+}
+
+input[type="number"] {
+  width: 25%;
+  padding: 3%;
+  margin: 0%;
+}
+
+fieldset {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+input[type="radio"] {
+  border: 0px;
+  width: 10%;
+  height: 1.25rem;
+  margin: 0.75rem;
+}
+
+input[type="cvc-code"] {
+  margin-top: 15%;
+}
+
+input[type="cardnumber"] {
+}
+
+label {
+  font-size: 1.2rem;
+}

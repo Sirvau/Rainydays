@@ -10,6 +10,9 @@
       content="Contact us if you have questions or for further information."
     />
     <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../css/navigation.css" rel="stylesheet" />
+    <link href="../css/footer.css" rel="stylesheet" />
+    <link href="../css/forms.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/81a562339c.js"
       crossorigin="anonymous"
@@ -69,7 +72,14 @@
         <p>If you have questions or feedback, let us know!</p>
       </section>
       <section class="container wrap">
-        <fieldset></fieldset>
+        <fieldset>
+          <label for="name">Name, surname</label>
+          <input type="name" name="name_surname" />
+          <label for="email">E-mail</label>
+          <input type="email" name="email" />
+          <label for="message">Your message</label>
+          <textarea id="message" name="message" rows="5" cols="30"></textarea>
+        </fieldset>
         <a class="button_medium" href="send_success.html">Send</a>
       </section>
     </main>

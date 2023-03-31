@@ -10,6 +10,9 @@
       content="Ice Shell jacket, a womens shelljacket."
     />
     <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../css/navigation.css" rel="stylesheet" />
+    <link href="../css/footer.css" rel="stylesheet" />
+    <link href="../css/forms.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/81a562339c.js"
       crossorigin="anonymous"
@@ -25,7 +28,12 @@
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="../images/logo2_rainydays-ai.png" alt="Logo of Rainydays online store" class="logo"/></a>
+      <a href="index.html"
+        ><img
+          src="../images/logo2_rainydays-ai.png"
+          alt="Logo of Rainydays online store"
+          class="logo"
+      /></a>
       <section class="container">
         <div class="icons_tablet_desktop">
           <span class="fa-solid fa-magnifying-glass"></span>
@@ -58,7 +66,11 @@
     <main>
       <section class="container">
         <div class="image_product_in_nature">
-            <img src="../images/product_ice_shell_jacket.jpg" alt="Product image of Ice Shell Jacket shown in a nature landscape" class="product_image"/>
+          <img
+            src="../images/product_ice_shell_jacket.jpg"
+            alt="Product image of Ice Shell Jacket shown in a nature landscape"
+            class="product_image"
+          />
         </div>
         <div class="product_icons">
           <i></i>
@@ -76,14 +88,37 @@
       </section>
       <section class="container">
         <div class="product">
-            <img src="../images/ice_shell_jacket.png" alt="Product image of Ice Shell Jacket" class="product_image"/>
-            <p class="product_price large">2699,-</p>
+          <img
+            src="../images/ice_shell_jacket.png"
+            alt="Product image of Ice Shell Jacket"
+            class="product_image"
+          />
+          <p class="product_price large">2699,-</p>
         </div>
-        <div class="radiobuttons">
-            <input><Radiobuttons></Radiobuttons></input>
+        <div class="size">
+          <input type="radio" name="size" value="xs" id="xs" />
+          <label for="size">XS</label>
         </div>
-            <a class="button_medium" href="shoppingbag.html">Add to bag</a>
+        <div class="size">
+          <input type="radio" name="size" value="s" id="s" />
+          <label for="size">S</label>
+        </div>
+        <div class="size">
+          <input type="radio" name="size" value="m" id="m" />
+          <label for="size">M</label>
+        </div>
+        <div class="size">
+          <input type="radio" name="size" value="l" id="l" />
+          <label for="size">L</label>
+        </div>
+        <div class="size">
+          <input type="radio" name="size" value="xl" id="xl" />
+          <label for="size">XL</label>
+        </div>
       </section>
+      <div>
+        <a class="button_medium" href="shoppingbag.html">Add to bag</a>
+      </div>
     </main>
     <footer>
       Copyright &copy;
