@@ -71,7 +71,12 @@
           />
           <p class="product_name">Ice Shell jacket</p>
           <p class="product_size">Size S</p>
-          <input type="number" name="number" />
+          <legend>Number of jackets</legend>
+          <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
         </div>
         <div class="product_image">
           <img
@@ -81,7 +86,12 @@
           />
           <p class="product_name">Forest Gore-Tex jacket</p>
           <p class="product_size">Size M</p>
-          <input type="number" name="number" />
+          <legend>Number of jackets</legend>
+          <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
         </div>
         <div class="product">
           <p>Total amount</p>
@@ -92,13 +102,13 @@
         <p class="headline_medium">Your information</p>
         <fieldset>
           <label for="name">Name, surname</label>
-          <input type="name" name="name_surname" />
+          <input type="name" name="name_surname" required/>
           <label for="email">E-mail</label>
-          <input type="email" name="email" />
+          <input type="email" name="email" required/>
           <label for="adress">Delivery adress</label>
-          <input type="adress" name="adress" />
+          <input type="adress" name="adress" required/>
           <label for="text">Postal code</label>
-          <input type="text" name="text" />
+          <input type="text" name="text" required/>
           <div>
           <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" cols="30"></textarea>
@@ -141,11 +151,11 @@
           </div>
           <div>
             <label for="cvc-code">CVC-code</label>
-            <input type="cvc-code" name="cvc-code" />
+            <input type="cvc-code" name="cvc-code" required/>
           </div>
           <div>
             <label for="cardnumber">Cardnumber</label>
-            <input type="cardnumber" name="cardnumber" />
+            <input type="cardnumber" name="cardnumber" required/>
           </div>
         </fieldset>
         <a id="checkout" class="button_medium" href="checkout.html">Checkout</a>

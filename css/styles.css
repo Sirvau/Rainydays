@@ -91,11 +91,11 @@ h3,
 }
 
 .button_small {
-  padding: 0.3rem 0.9rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .button_medium {
-  padding: 1rem 1.5rem;
+  padding: 2rem 1.5rem;
   margin: 1rem;
   display: inline-block;
 }
@@ -106,18 +106,19 @@ h3,
 
 .button_large {
   background-color: rgba(97, 104, 52, 1);
-  padding: 0.75rem 2rem;
-  font-size: 2.813rem;
+  padding: 0.5rem 1rem;
+  font-size: 4.375rem;
   border-radius: 0.6rem;
   min-width: 50px;
   text-align: center;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.15rem;
 }
 
 /*Images*/
-
 .image_banner {
   background-color: rgba(97, 104, 52, 1);
+  padding: 1rem;
+  margin: 3.3rem 0rem;
 }
 
 .image_about {
@@ -189,13 +190,14 @@ h3,
 }
 
 .image_index_iceclimbing {
-  padding: 75%;
+  padding: 80%;
   background-image: url(../images/index_ice_climbing.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   max-width: 100%;
   min-width: 50px;
   height: auto;
+  margin-top: 0%;
 }
 
 .image_index_man_on_mountain {
@@ -223,6 +225,10 @@ h3,
   font-size: 1.563rem;
 }
 
+.fa-circle-check {
+  color: rgba(13, 131, 11, 1);
+}
+
 .cirkle {
   background-color: rgba(5, 19, 30, 1);
   padding: 18% 6%;
@@ -236,8 +242,4 @@ h3,
 .fa-cc-discover {
   font-size: 2.5rem;
   color: rgba(205, 208, 212, 1);
-}
-
-.payment {
-  padding-bottom: 5%;
 }

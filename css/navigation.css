@@ -16,14 +16,22 @@
   height: auto;
 }
 
-nav {
+nav,
+#menu_checkbox {
+  display: none;
   letter-spacing: 0.15em;
   line-height: 1.875rem;
 }
 
 nav a {
   font-size: 1.563rem;
-  text-decoration: overline;
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+}
+
+#menu_checkbox:checked ~ nav {
+  display: block;
 }
 
 /*Icons*/
@@ -31,7 +39,9 @@ nav a {
 .fa-bag-shopping,
 .fa-house,
 .fa-magnifying-glass,
-.fa-bars {
+.fa-bars,
+#menu_checkbox {
   color: rgba(205, 208, 212, 1);
   font-size: 1.563rem;
+  padding: 1rem;
 }
