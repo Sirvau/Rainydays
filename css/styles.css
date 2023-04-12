@@ -21,10 +21,10 @@ body {
 }
 
 .wrap {
-  max-width: 90%;
-  height: auto;
-  background-color: rgba(46, 47, 49, 0.25);
-  padding: 3%;
+  max-width: 23rem;
+  height: 50rem;
+  padding: 0%;
+  margin: auto;
 }
 
 a,
@@ -45,26 +45,51 @@ h1 {
 
 h2 {
   font-size: 1.85rem;
+  margin: 2.5rem 1.1rem 1rem;
   text-align: center;
 }
 
 h3,
 .headline_medium {
   padding: 0%;
-  font-size: 1.25rem;
+  font-size: 1.35rem;
+  text-align: center;
 }
 
 .headline_medium {
   font-weight: bolder;
+  text-align: center;
+  margin: 1.5rem;
 }
 
+p {
+  margin: 1rem;
+}
+
+.paragraph {
+  text-align: center;
+}
+.paragraph_one {
+  margin: auto;
+  padding: 10% 2%;
+}
+
+.send_success {
+  margin: 2rem 1rem;
+  padding: 0.5rem;
+  border: 0.3rem rgba(97, 104, 52, 1) solid;
+}
 /*Products*/
 .product {
   background-color: rgba(46, 47, 49, 0.25);
   max-width: 100%;
   min-width: 6.25rem;
   height: auto;
-  padding: 2%;
+  margin: 10%;
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .product_name {
@@ -78,6 +103,9 @@ h3,
 
 .large {
   font-size: 2.5rem;
+  text-align: center;
+  margin: 2rem 0rem 6rem;
+  text-decoration: underline rgba(97, 104, 52, 1);
 }
 
 /*Buttons*/
@@ -92,132 +120,129 @@ h3,
 
 .button_small {
   padding: 0.5rem 0.5rem;
+  max-width: 3.5rem;
+  margin: auto;
+  margin-top: 0.7rem;
+  border: rgba(130, 51, 31, 1) 0.25rem solid;
 }
 
 .button_medium {
   padding: 2rem 1.5rem;
-  margin: 1rem;
-  display: inline-block;
+  margin: auto;
+  display: block;
+  width: 12rem;
+  border: rgba(130, 51, 31, 1) 0.4rem solid;
 }
 
 #checkout {
   background-color: rgba(97, 104, 52, 1);
+  border: 0.4rem solid rgba(73, 79, 39, 1);
 }
 
 .button_large {
   background-color: rgba(97, 104, 52, 1);
+  border: 0.4rem solid rgba(73, 79, 39, 1);
   padding: 0.5rem 1rem;
   font-size: 4.375rem;
-  border-radius: 0.6rem;
+  border-radius: 0.4rem;
   min-width: 50px;
   text-align: center;
   letter-spacing: 0.15rem;
+  float: center;
 }
 
 /*Images*/
 .image_banner {
   background-color: rgba(97, 104, 52, 1);
-  padding: 1rem;
+  padding: 0.5rem;
   margin: 3.3rem 0rem;
 }
 
 .image_about {
-  padding: 20%;
+  margin: 1rem 0rem;
   background-image: url(../images/about_us_rainydays.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   max-width: 100%;
-  min-width: 50px;
-  height: auto;
+  height: 10rem;
 }
 
 .Image_about_2 {
-  padding: 30%;
+  margin: 1rem 0px;
   background-image: url(../images/About_us_2.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   max-width: 100%;
-  min-width: 50px;
-  max-height: auto;
+  height: 20rem;
 }
 
 .image_contact {
-  padding: 20%;
   background-image: url(../images/contact_us__blue_mountain.jpg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   max-width: 100%;
-  min-width: 50px;
-  height: auto;
-  background-position-x: center;
-  background-position-y: center;
+  height: 20rem;
+  margin: auto;
 }
 
 .image_sortiment {
-  padding: 30%;
   background-image: url(../images/sortiment_main_picture.jpg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   max-width: 100%;
-  min-width: 100px;
-  height: auto;
+  height: 23rem;
   background-position-x: top;
 }
 
 .product_image {
-  max-width: 50%;
-  min-width: 100px;
-  height: auto;
-  margin: 3%;
+  max-width: 100%;
+  height: 10rem;
+  margin: auto;
+  text-align: center;
 }
 .image_product_in_nature {
   max-width: 100%;
-  min-width: 100px;
-  height: 100%;
+  height: 26.5rem;
+  margin: auto;
+  margin-left: 0.5rem;
 }
 
 .image_checkout {
-  padding: 60%;
   background-size: contain;
   background-position-x: bottom;
-  margin: 3%;
-  margin: 0%;
+  margin: 1rem 0.5rem 4rem 0.5rem;
   background-image: url(../images/checkout_glacier.jpg);
   background-repeat: no-repeat;
   max-width: 100%;
-  min-width: 100px;
-  height: auto;
+  height: 27rem;
 }
 
 .image_index_iceclimbing {
-  padding: 80%;
   background-image: url(../images/index_ice_climbing.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   max-width: 100%;
-  min-width: 50px;
-  height: auto;
-  margin-top: 0%;
+  height: 34rem;
+  margin: 1% 0%;
+  text-decoration: center;
 }
 
 .image_index_man_on_mountain {
-  padding: 40%;
+  margin: 20% 0% 5%;
   background-image: url(../images/index_man_on_mountain.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   max-width: 100%;
-  min-width: 50px;
-  height: auto;
+  height: 15.5rem;
 }
 
 .image_index_jacket_closeup {
-  padding: 75%;
+  margin: 10% 1% 5% 1%;
   background-image: url(../images/kal-visuals-Td9K-kMM4SQ-unsplash.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   max-width: 100%;
-  min-width: 50px;
-  height: auto;
+  height: 34rem;
 }
 
 .fa-message-check {
@@ -231,9 +256,10 @@ h3,
 
 .cirkle {
   background-color: rgba(5, 19, 30, 1);
-  padding: 18% 6%;
   border-radius: 90%;
   position: absolute;
+  margin: 1.2rem;
+  padding: 2rem 3rem;
 }
 
 .fa-cc-visa,
@@ -242,4 +268,10 @@ h3,
 .fa-cc-discover {
   font-size: 2.5rem;
   color: rgba(205, 208, 212, 1);
+}
+
+.fa-truck {
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }

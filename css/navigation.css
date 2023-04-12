@@ -11,9 +11,10 @@
 }
 
 .logo {
+  margin: auto;
   max-width: 100%;
-  min-width: 100px;
-  height: auto;
+  height: 10rem;
+  display: block;
 }
 
 nav,
@@ -21,12 +22,26 @@ nav,
   display: none;
   letter-spacing: 0.15em;
   line-height: 1.875rem;
+  margin: auto;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: block;
+  padding: 1rem 0rem;
 }
 
 nav a {
   font-size: 1.563rem;
   text-decoration: none;
-  display: block;
+  padding: 1rem;
+}
+
+.active {
+  text-decoration: none;
   padding: 1rem;
 }
 
@@ -44,4 +59,11 @@ nav a {
   color: rgba(205, 208, 212, 1);
   font-size: 1.563rem;
   padding: 1rem;
+  margin: auto;
+}
+
+.fa-house,
+.fa-magnifying-glass,
+.searchbar {
+  display: none;
 }

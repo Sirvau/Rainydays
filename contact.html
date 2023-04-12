@@ -35,31 +35,25 @@
           class="logo"
       /></a>
       <section class="container">
-        <div class="icons_tablet_desktop">
-          <span class="fa-solid fa-magnifying-glass"></span>
-          <span><a href="index.html" class="fa-solid fa-house"></a></span>
-          <span
-            ><a
-              href="shoppingbag.html"
-              class="fa-sharp fa-solid fa-bag-shopping"
-            ></a
-          ></span>
-        </div>
-        <div class="icons_mobile">
-          <span class="fa-solid fa-bars"></span>
-          <span
-            ><a
-              href="shoppingbag.html"
-              class="fa-sharp fa-solid fa-bag-shopping"
-            ></a
-          ></span>
-        </div>
+        <span class="searchbar">
+          <input type="search" name="searchbar" />
+        </span>
+        <span class="fa-solid fa-magnifying-glass"></span>
+        <span><a href="index.html" class="fa-solid fa-house"></a></span>
+        <span
+          ><a
+            href="shoppingbag.html"
+            class="fa-sharp fa-solid fa-bag-shopping"
+          ></a
+        ></span>
       </section>
+      <input type="checkbox" id="menu_checkbox" />
+      <label for="menu_checkbox"><i class="fas fa-bars"></i></label>
       <nav>
         <ul>
           <li><a href="about.html">About</a></li>
           <li><a href="sortiment.html">Sortiment</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -67,11 +61,11 @@
       <section class="container">
         <div class="image_contact"></div>
       </section>
-      <section class="container wrap">
+      <section class="container">
         <h1>Contact us</h1>
-        <p>If you have questions or feedback, let us know!</p>
+        <p class="paragraph">If you have questions or feedback, let us know!</p>
       </section>
-      <section class="container wrap">
+      <section class="container">
         <fieldset>
           <label for="name">Name, surname</label>
           <input type="name" name="name_surname" />
@@ -80,15 +74,17 @@
           <label for="message">Your message</label>
           <textarea id="message" name="message" rows="5" cols="30"></textarea>
         </fieldset>
-        <a class="button_medium" href="send_success.html">Send</a>
+        <div class="button_small">
+          <a href="send_success.html">Send</a>
+        </div>
       </section>
     </main>
     <footer>
-      Copyright &copy;
       <span class="fa-regular fa-envelope"></span>
       <span class="fa-solid fa-mobile-screen-button"></span>
       <span class="fa-brands fa-instagram"></span>
       <span class="fa-brands fa-facebook"></span>
+      <div class="copyright">Copyright &copy;</div>
     </footer>
   </body>
 </html>

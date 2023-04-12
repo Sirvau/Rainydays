@@ -16,7 +16,6 @@ input[type="adress"],
 input[type="text"],
 input[type="cardnumber"],
 input[type="cvc-code"],
-input[type="search"],
 select,
 textarea {
   padding: 0.75rem;
@@ -24,7 +23,7 @@ textarea {
   border-radius: 0.25rem;
   color: rgba(205, 208, 212, 1);
   font-size: 1.2rem;
-  background-color: rgba(46, 47, 49, 0.25);
+  background-color: rgba(5, 19, 30, 1);
   letter-spacing: 0.05rem;
   font-family: "Montserrat", "sans-serif", "verdana";
 }
@@ -44,16 +43,16 @@ textarea {
 }
 
 fieldset {
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   padding: 1rem;
-  width: 20rem;
+  width: 15rem;
 }
 
 input[type="radio"] {
-  border: 0px;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.2rem;
+  height: 1.2rem;
   margin: 0.5rem;
 }
 
@@ -63,5 +62,16 @@ input[type="cvc-code"] {
 
 select {
   width: 3.5rem;
-  margin: 1rem 0.2rem;
+  height: 3rem;
+  margin: auto;
+  background-color: rgba(46, 47, 49, 0.25);
+}
+
+.size {
+  margin: 2rem 0rem 2rem 3.5rem;
+}
+
+.payment {
+  margin: auto;
+  padding: 0.8rem;
 }
