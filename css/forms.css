@@ -48,6 +48,7 @@ fieldset {
   margin-bottom: 3rem;
   padding: 1rem;
   width: 15rem;
+  color: rgba(205, 208, 212, 1);
 }
 
 input[type="radio"] {
