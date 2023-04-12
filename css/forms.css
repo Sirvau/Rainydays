@@ -16,7 +16,8 @@ input[type="adress"],
 input[type="text"],
 input[type="cardnumber"],
 input[type="cvc-code"],
-select,
+input[type="search"] select,
+.searchbar,
 textarea {
   padding: 0.75rem;
   margin: 0.3rem 0.75rem 1.2rem 0.75rem;
@@ -48,7 +49,6 @@ fieldset {
   margin-bottom: 3rem;
   padding: 1rem;
   width: 15rem;
-  color: rgba(205, 208, 212, 1);
 }
 
 input[type="radio"] {
@@ -66,6 +66,8 @@ select {
   height: 3rem;
   margin: auto;
   background-color: rgba(46, 47, 49, 0.25);
+  color: rgba(205, 208, 212, 1);
+  text-align: center;
 }
 
 .size {
@@ -75,4 +77,13 @@ select {
 .payment {
   margin: auto;
   padding: 0.8rem;
+}
+
+@media only screen and (min-width: 600px) {
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 992px) {
+}
+@media only screen and (min-width: 1200px) {
 }

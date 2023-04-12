@@ -32,6 +32,7 @@ nav ul {
 nav li {
   display: block;
   padding: 1rem 0rem;
+  margin: auto;
 }
 
 nav a {
@@ -49,21 +50,84 @@ nav a {
   display: block;
 }
 
-/*Icons*/
+/*Icons------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------*/
 
 .fa-bag-shopping,
 .fa-house,
 .fa-magnifying-glass,
+#menu_checkbox,
 .fa-bars,
-#menu_checkbox {
+.searchbar {
   color: rgba(205, 208, 212, 1);
   font-size: 1.563rem;
   padding: 1rem;
-  margin: auto;
+  margin: 1rem;
+}
+
+.fa-bag-shopping,
+.fa-house,
+.fa-magnifying-glass,
+#menu_checkbox,
+.searchbar {
+  display: none;
 }
 
 .fa-house,
-.fa-magnifying-glass,
-.searchbar {
+.fa-magnifying-glass {
   display: none;
+}
+
+/*Media queries------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 600px) {
+  .logo {
+    height: 12rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    display: flex;
+  }
+
+  .logo {
+    height: 14rem;
+    margin: auto;
+  }
+
+  nav li {
+    display: inline-block;
+    flex-direction: row;
+    margin: 4rem 2rem 2rem;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 2rem;
+    text-decoration: overline;
+    padding: 1rem;
+    margin: auto;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  #menu_checkbox:enabled ~ nav {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .logo {
+    height: 16rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .logo {
+    height: 18rem;
+  }
 }

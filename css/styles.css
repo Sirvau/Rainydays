@@ -10,8 +10,8 @@
     format("truetype");
 }
 
-/*Universal styles
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*Universal styles------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------*/
 
 body {
   font-family: "Montserrat", "sans-serif", "verdana";
@@ -78,7 +78,14 @@ p {
   padding: 0.5rem;
   border: 0.3rem rgba(97, 104, 52, 1) solid;
 }
-/*Products*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+/*Products*------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------*/
+
 .product {
   background-color: rgba(46, 47, 49, 0.25);
   max-width: 100%;
@@ -107,7 +114,8 @@ p {
   text-decoration: underline rgba(97, 104, 52, 1);
 }
 
-/*Buttons*/
+/*Buttons------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------*/
 .button_small,
 .button_medium {
   background-color: rgba(167, 70, 46, 1);
@@ -147,10 +155,10 @@ p {
   min-width: 50px;
   text-align: center;
   letter-spacing: 0.15rem;
-  float: center;
 }
 
-/*Images*/
+/*Images------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------*/
 .image_banner {
   background-color: rgba(97, 104, 52, 1);
   padding: 0.5rem;
@@ -181,7 +189,7 @@ p {
   background-repeat: no-repeat;
   max-width: 100%;
   height: 20rem;
-  margin: auto;
+  margin: 1rem 0rem;
 }
 
 .image_sortiment {
@@ -222,17 +230,17 @@ p {
   background-repeat: no-repeat;
   max-width: 100%;
   height: 34rem;
-  margin: 1% 0%;
+  margin: 1rem 0.2rem;
   text-decoration: center;
 }
 
 .image_index_man_on_mountain {
-  margin: 20% 0% 5%;
+  margin: 1rem 0rem;
   background-image: url(../images/index_man_on_mountain.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   max-width: 100%;
-  height: 15.5rem;
+  height: 16rem;
 }
 
 .image_index_jacket_closeup {
@@ -273,4 +281,16 @@ p {
   margin: auto;
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
 }

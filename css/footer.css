@@ -32,3 +32,12 @@ footer {
   text-align: end;
   margin: 1rem 0rem 0rem 0rem;
 }
+
+@media only screen and (min-width: 600px) {
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 992px) {
+}
+@media only screen and (min-width: 1200px) {
+}
