@@ -27,30 +27,32 @@
   </head>
   <body>
     <header>
-      <a href="index.html"
-        ><img
-          src="../images/logo2_rainydays-ai.png"
-          alt="Logo of Rainydays online store"
-          class="logo"
-      /></a>
-      <section class="container">
-        <span class="searchbar">
-          <input type="search" name="searchbar" />
-        </span>
-        <span class="fa-solid fa-magnifying-glass"></span>
-        <span><a href="index.html" class="fa-solid fa-house"></a></span>
-        <span
-          ><a
-            href="shoppingbag.html"
-            class="fa-sharp fa-solid fa-bag-shopping"
-          ></a
-        ></span>
+      <section class="container header_icons">
+        <div>
+          <input type="name" name="searchbar" id="searchbar" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i><a href="index.html" class="fa-solid fa-house"></a></i>
+          <i
+            ><a
+              href="shoppingbag.html"
+              class="fa-sharp fa-solid fa-bag-shopping"
+            ></a
+          ></i>
+        </div>
       </section>
+      <div class="logo">
+        <a href="index.html"
+          ><img
+            src="../images/logo2_rainydays-ai.png"
+            alt="Logo of Rainydays online store"
+            style="max-width: 250px"
+        /></a>
+      </div>
       <input type="checkbox" id="menu_checkbox" />
       <label for="menu_checkbox"><i class="fas fa-bars"></i></label>
-      <nav>
+      <nav class="container navigation">
         <ul>
-          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="sortiment.html">Sortiment</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>

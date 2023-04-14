@@ -10,11 +10,28 @@
     format("truetype");
 }
 
+header {
+  border: 5px coral solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo,
+nav,
+.header_icons {
+  margin: 1px;
+  border: 2px green solid;
+}
+
+.header_icons {
+  align-self: flex-end;
+  text-align: right;
+}
+
 .logo {
+  max-width: 250px;
+  width: 100%;
   margin: auto;
-  max-width: 100%;
-  height: 10rem;
-  display: block;
 }
 
 nav,
@@ -22,7 +39,8 @@ nav,
   display: none;
   letter-spacing: 0.15em;
   line-height: 1.875rem;
-  margin: auto;
+  margin: 0.5rem;
+  align-self: left;
 }
 
 nav ul {
@@ -61,73 +79,64 @@ nav a {
 .searchbar {
   color: rgba(205, 208, 212, 1);
   font-size: 1.563rem;
-  padding: 1rem;
-  margin: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
 }
 
-.fa-bag-shopping,
-.fa-house,
-.fa-magnifying-glass,
-#menu_checkbox,
-.searchbar {
+.header_icons {
   display: none;
 }
 
-.fa-house,
-.fa-magnifying-glass {
-  display: none;
+input[type="name"] {
+  border-radius: 0.25rem;
+  color: rgba(205, 208, 212, 1);
+  font-size: 1.2rem;
+  background-color: rgba(5, 19, 30, 1);
+  letter-spacing: 0.05rem;
+  font-family: "Montserrat", "sans-serif", "verdana";
+  padding: 4px;
+  width: 30%;
 }
-
 /*Media queries------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------*/
 
 @media only screen and (min-width: 600px) {
-  .logo {
-    height: 12rem;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .container {
-    display: flex;
+  header {
+    flex-direction: row;
   }
 
-  .logo {
-    height: 14rem;
+  .header_icons {
+    display: inline-block;
+  }
+
+  header,
+  .logo,
+  .navigation,
+  .header_icons {
+    margin: 0.5rem;
+    flex-direction: column;
+  }
+
+  #menu_checkbox:enabled ~ nav li {
     margin: auto;
+    display: inline-block;
+  }
+  #menu_checkbox,
+  .fa-bars {
+    display: none;
   }
 
   nav li {
     display: inline-block;
     flex-direction: row;
-    margin: 4rem 2rem 2rem;
-    justify-content: center;
   }
+}
 
-  nav a {
-    font-size: 2rem;
-    text-decoration: overline;
-    padding: 1rem;
-    margin: auto;
-  }
-
-  .fa-bars {
-    display: none;
-  }
-
-  #menu_checkbox:enabled ~ nav {
-    display: inline-block;
-  }
+@media only screen and (min-width: 768px) {
 }
 
 @media only screen and (min-width: 992px) {
-  .logo {
-    height: 16rem;
-  }
 }
 
 @media only screen and (min-width: 1200px) {
-  .logo {
-    height: 18rem;
-  }
 }

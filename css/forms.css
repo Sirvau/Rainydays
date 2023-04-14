@@ -17,7 +17,6 @@ input[type="text"],
 input[type="cardnumber"],
 input[type="cvc-code"],
 input[type="search"] select,
-.searchbar,
 textarea {
   padding: 0.75rem;
   margin: 0.3rem 0.75rem 1.2rem 0.75rem;
@@ -40,7 +39,8 @@ input[type="adress"],
 input[type="cardnumber"],
 input[type="search"],
 textarea {
-  width: 15rem;
+  width: 100%;
+  max-width: 200px;
 }
 
 fieldset {

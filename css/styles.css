@@ -20,6 +20,12 @@ body {
   font-size: 1.25rem;
 }
 
+main {
+  display: grid;
+  grid-gap: 2rem;
+  border: 10px coral solid;
+}
+
 .wrap {
   max-width: 23rem;
   height: 50rem;
@@ -79,10 +85,6 @@ p {
   border: 0.3rem rgba(97, 104, 52, 1) solid;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-}
 /*Products*------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------*/
 
