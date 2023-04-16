@@ -515,7 +515,7 @@ p {
 
   .index_two,
   .index_four {
-    width: 600px;
+    width: 500px;
     margin: auto;
   }
 
@@ -531,12 +531,13 @@ p {
 
   /*index two*/
   .index_two {
-    height: 400px;
+    height: 500px;
   }
 
   .image_index_man_on_mountain {
     height: 30rem;
-    margin: auto;
+    margin: 11px;
+    background-size: cover;
   }
 
   /*paragraph*/
@@ -560,7 +561,8 @@ p {
   }
 
   .image_index_jacket_closeup {
-    height: 40rem;
+    height: 30rem;
+    margin: 10px;
   }
 
   /*products*/
@@ -581,5 +583,41 @@ p {
   .sortiment_page {
     display: grid;
     border: 4px yellow solid;
+  }
+
+  /*Layout sections*/
+  .index_one,
+  .index_three {
+    width: 620px;
+  }
+
+  .index_two,
+  .index_four {
+    width: 750px;
+    height: 500px;
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 1430px) {
+  .index_page,
+  .about_us_page,
+  .check_out_page,
+  .contact_page,
+  .product_page,
+  .send_success_page,
+  .shoppingbag_page,
+  .sortiment_page {
+    border: 4px rgb(140, 7, 222) solid;
+  }
+  /*Layout sections*/
+  .index_one,
+  .index_three {
+    width: 600px;
+  }
+
+  .index_two,
+  .index_four {
+    width: 770px;
   }
 }
