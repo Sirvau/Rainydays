@@ -1,13 +1,25 @@
 @font-face {
-  font-family: "Montserrat", sans-serif, verdana;
-  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap")
-    format("truetype");
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw5aXo.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 
 @font-face {
-  font-family: "Bebas Neue", "Montserrat", "sans-serif";
-  src: url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,500;1,900&display=swap")
-    format("truetype");
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/bebasneue/v9/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 
 /*Universal styles------------------------------------------------------------------------------------------
@@ -17,13 +29,28 @@ body {
   font-family: "Montserrat", "sans-serif", "verdana";
   background-color: rgba(5, 19, 30, 1);
   color: rgba(205, 208, 212, 1);
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 
-main {
+.index_page,
+.about_us_page,
+.check_out_page,
+.contact_page,
+.product_page,
+.send_success_page,
+.shoppingbag_page,
+.sortiment_page {
   display: grid;
-  grid-gap: 2rem;
-  border: 10px coral solid;
+  border: 4px brown solid;
+}
+
+.index_one,
+.index_two,
+.index_three,
+.index_four {
+  grid-gap: 2px;
+  display: grid;
+  border: 4px palevioletred solid;
 }
 
 .wrap {
@@ -62,27 +89,35 @@ h3,
 }
 
 .headline_medium {
+  font-family: "Montserrat", "sans-serif", "verdana";
   font-weight: bolder;
   text-align: center;
-  margin: 1.5rem;
-}
-
-p {
-  margin: 1rem;
-}
-
-.paragraph {
-  text-align: center;
-}
-.paragraph_one {
   margin: auto;
-  padding: 10% 2%;
 }
 
 .send_success {
   margin: 2rem 1rem;
   padding: 0.5rem;
   border: 0.3rem rgba(97, 104, 52, 1) solid;
+}
+
+p {
+  margin: 1rem;
+}
+
+.paragraph_centered {
+  text-align: center;
+  margin-right: 10%;
+}
+
+.two {
+  margin-right: 10%;
+  margin-bottom: 50px;
+}
+
+.paragraph_one {
+  margin: auto;
+  padding: 10% 2%;
 }
 
 /*Products*------------------------------------------------------------------------------------------
@@ -151,12 +186,14 @@ p {
 .button_large {
   background-color: rgba(97, 104, 52, 1);
   border: 0.4rem solid rgba(73, 79, 39, 1);
-  padding: 0.5rem 1rem;
-  font-size: 4.375rem;
+  padding: 0.4rem 1rem;
+  font-size: 3.5rem;
   border-radius: 0.4rem;
   min-width: 50px;
   text-align: center;
   letter-spacing: 0.15rem;
+  margin: 2px;
+  margin-left: 18%;
 }
 
 /*Images------------------------------------------------------------------------------------------
@@ -165,40 +202,31 @@ p {
   background-color: rgba(97, 104, 52, 1);
   padding: 0.5rem;
   margin: 3.3rem 0rem;
+  max-width: 350px;
 }
 
-.image_about {
+.background_images {
   margin: 1rem 0rem;
-  background-image: url(../images/about_us_rainydays.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   max-width: 100%;
+  height: 20rem;
+}
+.image_about {
+  background-image: url(../images/about_us_rainydays.jpg);
   height: 10rem;
 }
 
 .Image_about_2 {
-  margin: 1rem 0px;
   background-image: url(../images/About_us_2.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  max-width: 100%;
-  height: 20rem;
 }
 
 .image_contact {
   background-image: url(../images/contact_us__blue_mountain.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  max-width: 100%;
-  height: 20rem;
-  margin: 1rem 0rem;
 }
 
 .image_sortiment {
   background-image: url(../images/sortiment_main_picture.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  max-width: 100%;
   height: 23rem;
   background-position-x: top;
 }
@@ -210,47 +238,33 @@ p {
   text-align: center;
 }
 .image_product_in_nature {
-  max-width: 100%;
   height: 26.5rem;
   margin: auto;
   margin-left: 0.5rem;
 }
 
 .image_checkout {
-  background-size: contain;
   background-position-x: bottom;
-  margin: 1rem 0.5rem 4rem 0.5rem;
+  margin: 1%;
   background-image: url(../images/checkout_glacier.jpg);
-  background-repeat: no-repeat;
-  max-width: 100%;
   height: 27rem;
 }
 
 .image_index_iceclimbing {
   background-image: url(../images/index_ice_climbing.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  max-width: 100%;
   height: 34rem;
   margin: 1rem 0.2rem;
-  text-decoration: center;
+  display: block;
 }
 
 .image_index_man_on_mountain {
-  margin: 1rem 0rem;
   background-image: url(../images/index_man_on_mountain.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  max-width: 100%;
   height: 16rem;
 }
 
 .image_index_jacket_closeup {
   margin: 10% 1% 5% 1%;
   background-image: url(../images/kal-visuals-Td9K-kMM4SQ-unsplash.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  max-width: 100%;
   height: 34rem;
 }
 
@@ -285,14 +299,229 @@ p {
   justify-content: center;
 }
 
-@media only screen and (min-width: 600px) {
+/*Layout sections------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------*/
+.index_one,
+.index_two,
+.index_three,
+.index_four {
+  width: 350px;
+  margin: auto;
 }
+
+@media only screen and (min-width: 500px) {
+  .index_page,
+  .about_us_page,
+  .check_out_page,
+  .contact_page,
+  .product_page,
+  .send_success_page,
+  .shoppingbag_page,
+  .sortiment_page {
+    display: grid;
+    border: 4px orangered solid;
+  }
+
+  .headline_medium {
+    font-size: 25px;
+    margin-bottom: 35px;
+  }
+
+  .index_one,
+  .index_two,
+  .index_three,
+  .index_four {
+    grid-gap: 2px;
+    display: grid;
+    border: 4px palevioletred solid;
+  }
+
+  /*index-page ----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------*/
+
+  .paragraph_centered {
+    font-size: 22px;
+    margin-right: 8%;
+  }
+
+  /*index two, three and four*/
+  .index_one,
+  .index_two,
+  .index_three,
+  .index_four {
+    width: 450px;
+    display: block;
+    margin: auto;
+    background-size: contain;
+  }
+
+  /*index one-----------------------------------------------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------------*/
+
+  .image_index_iceclimbing {
+    margin-left: 7%;
+    height: 36rem;
+  }
+
+  /*Banner and button*/
+  .image_banner {
+    max-width: 500px;
+  }
+
+  .button_large {
+    margin-left: 25%;
+    margin-right: 0%;
+  }
+
+  /*index two-------------------------------------------------------------------------------------------------
+  -----------------------------------------------------------------------------------------------------------*/
+  .image_index_man_on_mountain {
+    height: 20rem;
+    margin: auto;
+  }
+
+  /*paragraph*/
+  .two {
+    margin-right: 5%;
+    margin-bottom: 50px;
+  }
+
+  /*index four-------------------------------------------------------------------------------------------------
+  -----------------------------------------------------------------------------------------------------------*/
+  .image_index_jacket_closeup {
+    margin-top: 10px;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .index_page,
+  .about_us_page,
+  .check_out_page,
+  .contact_page,
+  .product_page,
+  .send_success_page,
+  .shoppingbag_page,
+  .sortiment_page {
+    display: grid;
+    border: 4px rgb(48, 154, 211) solid;
+  }
+
+  .index_one,
+  .index_two,
+  .index_three,
+  .index_four {
+    width: 580px;
+  }
+
+  /*index-page ----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------*/
+
+  .paragraph_centered {
+    margin-right: 32%;
+  }
+
+  /*index one-----------------------------------------------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------------*/
+
+  /*Image*/
+  .image_index_iceclimbing {
+    height: 40rem;
+    margin-left: 13%;
+  }
+
+  /*paragraph*/
+  .one {
+    margin-right: 4%;
+  }
+
+  /*Banner and button*/
+  .image_banner {
+    max-width: 684px;
+  }
+
+  .button_large {
+    margin-left: 32%;
+  }
+
+  /*index two*/
+
+  .index_two {
+    margin: auto;
+  }
+
+  .image_index_man_on_mountain {
+    height: 24rem;
+    margin: auto;
+  }
+
+  /*index three*/
+
+  /*paragraph*/
+  .two {
+    margin-right: 5%;
+    margin-bottom: 50px;
+  }
+  /*index four*/
+  .index_four {
+    margin: auto;
+  }
+  .image_index_jacket_closeup {
+    height: 30rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+/*Products*/
 
 @media only screen and (min-width: 768px) {
-}
+  .index_page,
+  .about_us_page,
+  .check_out_page,
+  .contact_page,
+  .product_page,
+  .send_success_page,
+  .shoppingbag_page,
+  .sortiment_page {
+    display: grid;
+    border: 4px green solid;
+  }
 
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 @media only screen and (min-width: 992px) {
+  .index_page,
+  .about_us_page,
+  .check_out_page,
+  .contact_page,
+  .product_page,
+  .send_success_page,
+  .shoppingbag_page,
+  .sortiment_page {
+    display: grid;
+    border: 4px purple solid;
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
+  .index_page,
+  .about_us_page,
+  .check_out_page,
+  .contact_page,
+  .product_page,
+  .send_success_page,
+  .shoppingbag_page,
+  .sortiment_page {
+    display: grid;
+    border: 4px yellow solid;
+  }
 }

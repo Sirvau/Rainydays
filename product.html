@@ -9,22 +9,19 @@
       name="description"
       content="Ice Shell jacket, a womens shelljacket."
     />
-    <link href="../css/styles.css" rel="stylesheet" />
-    <link href="../css/navigation.css" rel="stylesheet" />
-    <link href="../css/footer.css" rel="stylesheet" />
-    <link href="../css/forms.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/81a562339c.js"
       crossorigin="anonymous"
     ></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,500;1,900&display=swap"
       rel="stylesheet"
     />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../product.css" rel="stylesheet"/>
+    <link href="../css/navigation.css" rel="stylesheet" />
+    <link href="../css/footer.css" rel="stylesheet" />
+    <link href="../css/forms.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -59,22 +56,24 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section class="container">
-        <img
-          class="image_product_in_nature"
-          src="../images/product_ice_shell_jacket.jpg"
-          alt="Product image of Ice Shell Jacket shown in a nature landscape"
-        />
-      </section>
-      <section class="container">
-        <p class="headline_medium">Ice Shell jacket</p>
-        <p>
-          Versatile, weather protective and fully equipped shell jacket for
-          women.
-        </p>
-        <p>Made for all kinds of adventures in forests and mountains.</p>
-      </section>
+    <main class="product_page">
+      <div>
+        <section class="container">
+          <img
+            class="background_images image_product_in_nature"
+            src="../images/product_ice_shell_jacket.jpg"
+            alt="Product image of Ice Shell Jacket shown in a nature landscape"
+          />
+        </section>
+        <section class="container">
+          <h1 class="headline_medium">Ice Shell jacket</h1>
+          <p>
+            Versatile, weather protective and fully equipped shell jacket for
+            women.
+          </p>
+          <p>Made for all kinds of adventures in forests and mountains.</p>
+        </section>
+      </div>
       <section class="container">
         <div class="product">
           <img
@@ -84,30 +83,32 @@
           />
           <p class="product_price large">2699,-</p>
         </div>
-        <div class="size">
-          <input type="radio" name="size" value="xs" id="xs" />
-          <label for="size">XS</label>
-        </div>
-        <div class="size">
-          <input type="radio" name="size" value="s" id="s" />
-          <label for="size">S</label>
-        </div>
-        <div class="size">
-          <input type="radio" name="size" value="m" id="m" />
-          <label for="size">M</label>
-        </div>
-        <div class="size">
-          <input type="radio" name="size" value="l" id="l" />
-          <label for="size">L</label>
-        </div>
-        <div class="size">
-          <input type="radio" name="size" value="xl" id="xl" />
-          <label for="size">XL</label>
-        </div>
-      </section>
+        <div>
+          <div class="size">
+            <input type="radio" name="size" value="xs" id="xs" />
+            <label for="xs">XS</label>
+          </div>
+          <div class="size">
+            <input type="radio" name="size" value="s" id="s" />
+            <label for="s">S</label>
+          </div>
+          <div class="size">
+           <input type="radio" name="size" value="m" id="m" />
+           <label for="m">M</label>
+          </div>
+          <div class="size">
+            <input type="radio" name="size" value="l" id="l" />
+           <label for="l">L</label>
+          </div>
+          <div class="size">
+           <input type="radio" name="size" value="xl" id="xl" />
+            <label for="xl">XL</label>
+          </div>
+        </section>
       <div>
         <a class="button_medium" href="shoppingbag.html">Add to bag</a>
       </div>
+    </div>
     </main>
     <footer>
       <span class="fa-regular fa-envelope"></span>
