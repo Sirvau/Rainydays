@@ -23,7 +23,6 @@
 }
 
 header {
-  border: 5px coral solid;
   display: flex;
   flex-direction: column;
 }
@@ -32,7 +31,6 @@ header {
 nav,
 .header_icons {
   margin: 1px;
-  border: 2px green solid;
 }
 
 .logo {
@@ -132,6 +130,14 @@ input[type="name"] {
     display: inline-block;
     flex-direction: row;
   }
+  nav a {
+    text-decoration-line: overline;
+  }
+
+  .active {
+    text-decoration: none;
+    padding: 1rem;
+  }
 
   .navigation {
     text-align: center;
@@ -147,9 +153,15 @@ input[type="name"] {
 }
 
 @media only screen and (min-width: 768px) {
+  nav a {
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (min-width: 992px) {
+  nav a {
+    font-size: 2.2rem;
+  }
 }
 
 @media only screen and (min-width: 1200px) {

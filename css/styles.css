@@ -41,7 +41,6 @@ body {
 .shoppingbag_page,
 .sortiment_page {
   display: grid;
-  border: 4px brown solid;
 }
 
 .index_one,
@@ -50,7 +49,6 @@ body {
 .index_four {
   grid-gap: 2px;
   display: grid;
-  border: 4px palevioletred solid;
 }
 
 .wrap {
@@ -319,7 +317,6 @@ p {
   .shoppingbag_page,
   .sortiment_page {
     display: grid;
-    border: 4px orangered solid;
   }
 
   .headline_medium {
@@ -333,7 +330,6 @@ p {
   .index_four {
     grid-gap: 2px;
     display: grid;
-    border: 4px palevioletred solid;
   }
 
   /*index-page ----------------------------------------------------------------------------------------------------
@@ -389,20 +385,27 @@ p {
     margin-top: 10px;
     background-size: cover;
   }
+
+  /*About us-page ----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------*/
+  .wrap_about {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+  }
+
+  .image_about,
+  .Image_about_2 {
+    height: 200px;
+    margin: 15px 20px;
+  }
+
+  .Image_about_2 {
+    height: 400px;
+  }
 }
 
 @media only screen and (min-width: 600px) {
-  .index_page,
-  .about_us_page,
-  .check_out_page,
-  .contact_page,
-  .product_page,
-  .send_success_page,
-  .shoppingbag_page,
-  .sortiment_page {
-    display: grid;
-    border: 4px rgb(48, 154, 211) solid;
-  }
   /*Layout sections*/
   .index_one,
   .index_two,
@@ -467,31 +470,52 @@ p {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
+  /*About us-page ----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------*/
+  .wrap_about {
+    width: 500px;
+    height: 400px;
+    margin: auto;
+  }
+
+  .image_about,
+  .Image_about_2 {
+    height: 300px;
+    margin: 15px 20px;
+  }
+
+  .Image_about_2 {
+    height: 500px;
+  }
 }
 
 /*Products*/
 
 @media only screen and (min-width: 768px) {
-  .index_page,
-  .about_us_page,
-  .check_out_page,
-  .contact_page,
-  .product_page,
-  .send_success_page,
-  .shoppingbag_page,
-  .sortiment_page {
-    display: grid;
-    border: 4px green solid;
-  }
-
   .products {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  /*About us-page ----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------*/
+  .image_about,
+  .Image_about_2 {
+    height: 250px;
+  }
+
+  .Image_about_2 {
+    height: 500px;
+  }
+
+  .wrap_about {
+    width: 600px;
+    height: 400px;
+  }
 }
 @media only screen and (min-width: 992px) {
   .index_page,
-  .about_us_page,
   .check_out_page,
   .contact_page,
   .product_page,
@@ -501,7 +525,6 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    border: 4px purple solid;
   }
   /*index-page ----------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------*/
@@ -570,21 +593,20 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+  /*About us-page ----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------*/
+  .image_about,
+  .Image_about_2 {
+    height: 400px;
+    margin: 15px 20px;
+  }
+
+  .Image_about_2 {
+    height: 620px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-  .index_page,
-  .about_us_page,
-  .check_out_page,
-  .contact_page,
-  .product_page,
-  .send_success_page,
-  .shoppingbag_page,
-  .sortiment_page {
-    display: grid;
-    border: 4px yellow solid;
-  }
-
   /*Layout sections*/
   .index_one,
   .index_three {
@@ -606,19 +628,19 @@ p {
     height: 600px;
     margin-top: 10px;
   }
+  /*About us-page ----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------*/
+  .image_about,
+  .Image_about_2 {
+    margin: 20px 50px;
+  }
+
+  .Image_about_2 {
+    margin-left: 180px;
+  }
 }
 
 @media only screen and (min-width: 1430px) {
-  .index_page,
-  .about_us_page,
-  .check_out_page,
-  .contact_page,
-  .product_page,
-  .send_success_page,
-  .shoppingbag_page,
-  .sortiment_page {
-    border: 4px rgb(140, 7, 222) solid;
-  }
   /*Layout sections*/
   .index_one,
   .index_three {
@@ -629,19 +651,21 @@ p {
   .index_four {
     width: 770px;
   }
+
+  /*About us-page ----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------*/
+  .image_about,
+  .Image_about_2 {
+    margin: 20px;
+    margin-left: 120px;
+  }
+
+  .Image_about_2 {
+    margin-left: 220px;
+  }
 }
 
 @media only screen and (min-width: 1500px) {
-  .index_page,
-  .about_us_page,
-  .check_out_page,
-  .contact_page,
-  .product_page,
-  .send_success_page,
-  .shoppingbag_page,
-  .sortiment_page {
-    border: 4px rgb(7, 222, 68) solid;
-  }
   /*Layout sections*/
   .index_one {
     width: 600px;
