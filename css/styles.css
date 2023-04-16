@@ -355,8 +355,7 @@ p {
     background-size: contain;
   }
 
-  /*index one-----------------------------------------------------------------------------------------------
-  ---------------------------------------------------------------------------------------------------------*/
+  /*index one*/
 
   .image_index_iceclimbing {
     margin-left: 7%;
@@ -373,8 +372,7 @@ p {
     margin-right: 0%;
   }
 
-  /*index two-------------------------------------------------------------------------------------------------
-  -----------------------------------------------------------------------------------------------------------*/
+  /*index two*/
   .image_index_man_on_mountain {
     height: 20rem;
     margin: auto;
@@ -386,8 +384,7 @@ p {
     margin-bottom: 50px;
   }
 
-  /*index four-------------------------------------------------------------------------------------------------
-  -----------------------------------------------------------------------------------------------------------*/
+  /*index four*/
   .image_index_jacket_closeup {
     margin-top: 10px;
     background-size: cover;
@@ -406,7 +403,7 @@ p {
     display: grid;
     border: 4px rgb(48, 154, 211) solid;
   }
-
+  /*Layout sections*/
   .index_one,
   .index_two,
   .index_three,
@@ -508,6 +505,8 @@ p {
   }
   /*index-page ----------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------*/
+
+  /*Layout sections*/
   .index_one,
   .index_three {
     width: 500px;
@@ -516,21 +515,55 @@ p {
 
   .index_two,
   .index_four {
-    width: 450px;
+    width: 600px;
     margin: auto;
   }
 
-  .index_two {
-    height: 300px;
+  /*index one*/
+  .image_index_iceclimbing {
+    background-size: cover;
+    margin: 1px;
   }
+
+  .button_large {
+    margin-left: 29%;
+  }
+
+  /*index two*/
+  .index_two {
+    height: 400px;
+  }
+
+  .image_index_man_on_mountain {
+    height: 30rem;
+    margin: auto;
+  }
+
+  /*paragraph*/
+  .two {
+    line-height: 40px;
+  }
+
+  /*index three*/
   .index_three {
     margin-top: 15%;
   }
 
-  .index_four {
-    height: 500px;
+  .headline_medium {
+    font-size: 25px;
+    margin-bottom: 35px;
   }
 
+  /*index four*/
+  .index_four {
+    height: 600px;
+  }
+
+  .image_index_jacket_closeup {
+    height: 40rem;
+  }
+
+  /*products*/
   .products {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
