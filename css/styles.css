@@ -421,8 +421,7 @@ p {
     margin-right: 32%;
   }
 
-  /*index one-----------------------------------------------------------------------------------------------
-  ---------------------------------------------------------------------------------------------------------*/
+  /*index one*/
 
   /*Image*/
   .image_index_iceclimbing {
@@ -503,7 +502,33 @@ p {
   .shoppingbag_page,
   .sortiment_page {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     border: 4px purple solid;
+  }
+  /*index-page ----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------*/
+  .index_one,
+  .index_three {
+    width: 500px;
+    margin: auto;
+  }
+
+  .index_two,
+  .index_four {
+    width: 450px;
+    margin: auto;
+  }
+
+  .index_two {
+    height: 300px;
+  }
+  .index_three {
+    margin-top: 15%;
+  }
+
+  .index_four {
+    height: 500px;
   }
 
   .products {
