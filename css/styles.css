@@ -589,13 +589,22 @@ p {
   .index_one,
   .index_three {
     width: 620px;
+    margin-top: 10px;
   }
 
   .index_two,
   .index_four {
-    width: 750px;
+    width: 700px;
     height: 500px;
-    margin-top: 0px;
+    margin-top: 10px;
+  }
+
+  .index_three {
+    margin-top: 120px;
+  }
+  .index_four {
+    height: 600px;
+    margin-top: 10px;
   }
 }
 
@@ -619,5 +628,43 @@ p {
   .index_two,
   .index_four {
     width: 770px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .index_page,
+  .about_us_page,
+  .check_out_page,
+  .contact_page,
+  .product_page,
+  .send_success_page,
+  .shoppingbag_page,
+  .sortiment_page {
+    border: 4px rgb(7, 222, 68) solid;
+  }
+  /*Layout sections*/
+  .index_one {
+    width: 600px;
+    height: 1100px;
+  }
+
+  .image_index_iceclimbing {
+    height: 800px;
+  }
+
+  .index_two,
+  .index_four {
+    width: 800px;
+  }
+
+  .index_two {
+    height: 670px;
+  }
+
+  .index_three {
+    height: 400px;
+  }
+  .image_index_man_on_mountain {
+    height: 650px;
   }
 }
