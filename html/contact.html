@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Checkout success | Rainydays</title>
-    <meta name="description" content="Your checkout was a success" />
+    <title>Contact | Rainydays</title>
+    <meta
+      name="description"
+      content="Contact us if you have questions or for further information."
+    />
     <script
       src="https://kit.fontawesome.com/81a562339c.js"
       crossorigin="anonymous"
@@ -14,10 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,500;1,900&display=swap"
       rel="stylesheet"
     />
-    <link href="../css/checkout.css" rel="stylesheet" />
     <link href="../css/styles.css" rel="stylesheet" />
     <link href="../css/navigation.css" rel="stylesheet" />
     <link href="../css/footer.css" rel="stylesheet" />
+    <link href="../css/forms.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -25,7 +28,7 @@
         <div>
           <input type="name" name="searchbar" id="searchbar" />
           <i class="fa-solid fa-magnifying-glass"></i>
-          <i><a href="index.html" class="fa-solid fa-house"></a></i>
+          <i><a href="../index.html" class="fa-solid fa-house"></a></i>
           <i
             ><a
               href="shoppingbag.html"
@@ -35,7 +38,7 @@
         </div>
       </section>
       <div class="logo">
-        <a href="index.html"
+        <a href="../index.html"
           ><img
             src="../images/logo2_rainydays-ai.png"
             alt="Logo of Rainydays online store"
@@ -52,43 +55,25 @@
         </ul>
       </nav>
     </header>
-    <main class="check_out_page">
+    <main class="contact_page">
       <section class="container">
-        <div class="cirkle">
-          <h1>Thank you</h1>
-          <h2>for your order</h2>
-          <p class="paragraph">...and enjoy your adventures</p>
-        </div>
+        <div class="background_images image_contact"></div>
       </section>
       <section class="container">
-        <div class="image_checkout"></div>
+        <h1>Contact us</h1>
+        <p class="paragraph">If you have questions or feedback, let us know!</p>
       </section>
       <section class="container">
-        <h3>Order summary</h3>
-        <div class="product">
-          <img
-            src="../images/ice_shell_jacket.png"
-            alt="Product image of Ice Shell Jacket"
-            class="product_image"
-          />
-          <p class="product_name">Ice Shell jacket</p>
-          <p class="product_size">Size S</p>
-          <img
-            src="../images/forest_goretex_jacket.png"
-            alt="Product image of Forest Goretex Jacket"
-            class="product_image"
-          />
-          <p class="product_name">Forest Gore-Tex jacket</p>
-          <p class="product_size">Size M</p>
-        </div>
-        <div class="product">
-          <p>Order payment</p>
-          <p class="product_price">8297,-</p>
-          <span class="fa-solid fa-circle-check"></span>
-        </div>
-        <div>
-          <p class="paragraph">Estimated delivery by 2-4 working days.</p>
-          <span class="fa-solid fa-truck"></span>
+        <fieldset>
+          <label for="name">Name, surname</label>
+          <input type="name" name="name_surname" />
+          <label for="email">E-mail</label>
+          <input type="email" name="email" />
+          <label for="message">Your message</label>
+          <textarea id="message" name="message" rows="5" cols="30"></textarea>
+        </fieldset>
+        <div class="button_small">
+          <a href="send_success.html">Send</a>
         </div>
       </section>
     </main>
