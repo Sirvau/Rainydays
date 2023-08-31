@@ -27,14 +27,6 @@
 
 //API call function: all products
 
-//async function getProducts(){
-  //const response = await fetch("https://api.noroff.dev/api/v1/rainy-days");
-  //const results = await response.json();
-  //console.log(results); //I manage to console.log the results, but not return the results. I get 404 not found. 
-//}
-
-//getProducts();
-
 const apiUrl = "https://api.noroff.dev/api/v1/rainy-days";
 
 const getJacketInfo = document.querySelectorAll(".products");
@@ -51,28 +43,35 @@ async function displayJackets() {
     
     for (i = 0; i < jackets.length; i++) {
         const jacket = jackets[i];
-        //console.log(jacket);
+        
 
         if(jacket.onSale){
           const jacketDiv = document.createElement("div");
           jacketDiv.classList.add("product");
-          console.log(jacketDiv.outerHTML);
+         
 
           const image = document.createElement("img");
           image.src = jacket.image;
           image.alt = jacket.description;
+          image.classList.add("product_image");
 
-          const products = document.createElement("p");
-          products.classList.add("products");
-          products.innerHTML = `${jacket.title} <span class="jacketSale">${jacket.price}</span> $${jacket.discountedPrice}`;
+          const productTitle = document.createElement("p");
+          productTitle.innerHTML = `${jacket.title}`;
+          productTitle.classList.add("product_name");
+
+          const productPrice = document.createElement("p");
+          productPrice.innerHTML = `<span class="jacketSale">${jacket.price}</span> $${jacket.discountedPrice}`;
+          productPrice.classList.add("product_price");
 
           const button = document.createElement("a");
           button.href ="#";
           button.classList.add("button_small")
           button.textContent = "View";
 
+
           jacketsContainer.appendChild(image);
-          jacketsContainer.appendChild(products);
+          jacketsContainer.appendChild(productTitle);
+          jacketsContainer.appendChild(productPrice);
           jacketsContainer.appendChild(button);
          
         }
@@ -81,18 +80,3 @@ async function displayJackets() {
 
 displayJackets();
 
-
-
-
-//async function displayProducts(){
-  //  const products = await getProducts();
-    //const productsContainer = document.getElementById("products_container");
-    
-
-    //for(i =0; i < products.lenght; i++){
-       // const product = products[i];
-       // console.log(product);
-   // }
-//}
-
-//displayProducts();
