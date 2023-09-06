@@ -1,73 +1,54 @@
 
-
-//API call, fetching products
-const apiUrl = "https://api.noroff.dev/api/v1/rainy-days";
-
-const getJacketInfo = document.querySelectorAll(".products");
+import { getProducts } from "./api.js";
 
 
-export async function getProducts() {
-    const response = await fetch(apiUrl);
-    const result = await response.json();
-    return result;
+//Display jackets and information on site
+
+let i = 0;
+
+export async function displayProducts() {
+    const jacketsInfo = await getProducts();
+    const jacketsContainer = document.getElementById("jackets_container");
+
+ 
+    
+    for (i = 0; i < jacketsInfo.length; i++) {
+        const jacket = jacketsInfo[i];
+        
+
+        if (jacket.onSale) {
+            const jacketDiv = document.createElement("div");
+            jacketDiv.classList.add("jacket"); //Unsecure if this is the class that it's best to use. 
+
+            const image = document.createElement("img");
+            image.src = jacket.image;
+            image.alt = jacket.description;
+
+            const jacketTitle = document.createElement("p");
+            jacketTitle.classList.add("product_name");
+            jacketTitle.innerHTML = `${jacket.title}`
+
+            const jacketPrice = document.createElement("p");
+            jacketPrice.classList.add("product_price");
+            jacketPrice.innerHTML = `<span class="jacketSale">${jacket.price}</span> ${jacket.discountedPrice}`;
+
+            const button = document.createElement("a");
+            button.href = "#";
+            button.classList.add("button_small");
+            button.textContent = "view";
+
+            jacketsContainer.appendChild(image);
+            jacketsContainer.appendChild(jacketTitle)
+            jacketsContainer.appendChild(jacketPrice);
+            jacketsContainer.appendChild(button);
+    
+        }
+
+      
+}
 }
 
-getProducts();
-
-
-//Displaying products on products site
-
-async function displayJackets() {
-    const jackets = await getProducts();
-    const jacketsContainer = document.getElementById("jackets_container");
-    
-    for (i = 0; i < jackets.length; i++) {
-        const jacket = jackets[i];
-        
-        
-        if(jacket.onSale){
-          const jacketDiv = document.createElement("div");
-          jacketDiv.classList.add("product");
-         
-
-          const image = document.createElement("img");
-          image.src = jacket.image;
-          image.alt = jacket.description;
-          image.classList.add("product_image");
-
-          const productTitle = document.createElement("p");
-          productTitle.innerHTML = `${jacket.title}`;
-          productTitle.classList.add("product_name");
-
-          const productPrice = document.createElement("p");
-          productPrice.innerHTML = `<span class="jacketSale">${jacket.price}</span> $${jacket.discountedPrice}`;
-          productPrice.classList.add("product_price");
-
-          const button = document.createElement("a");
-          button.href ="#";
-          button.classList.add("button_small")
-          button.textContent = "View";
-
-          jacketsContainer.appendChild(image);
-          jacketsContainer.appendChild(productTitle);
-          jacketsContainer.appendChild(productPrice);
-          jacketsContainer.appendChild(button);
-         
-        }
-    }
-
-    }
-
-displayJackets();
-
-
-
-
-
-
-
-
-
+displayProducts();
 
 
 
