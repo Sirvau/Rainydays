@@ -1,41 +1,21 @@
-//API CALL goes here
-
-//Hardcoded HTML index and sortiment page
-//<div class = product>
-//<img
-//src="../images/ice_shell_jacket.png"
-//alt="Product image of Ice Shell Jacket"
-//class="product_image"
-///>
-//<p class="product_name">Ice Shell Jacket</p>
-//<p class="product_price">2699,-</p>
-//<a class="button_small" href="product.html">View</a>
-//CTA Button
-//</div>
 
 
-//Hardcoded HTML product page: sizes 
-//<div class="size">
-//<input type="radio" name="size" value="xs" id="xs" />
-//<label for="xs">XS</label>
-//</div>
-
-//Base URL API: https://api.noroff.dev/api/v1/ 
-
-
-
-
-//API call function: all products
-
+//API call, fetching products
 const apiUrl = "https://api.noroff.dev/api/v1/rainy-days";
 
 const getJacketInfo = document.querySelectorAll(".products");
 
-async function getProducts() {
+
+export async function getProducts() {
     const response = await fetch(apiUrl);
     const result = await response.json();
     return result;
 }
+
+getProducts();
+
+
+//Displaying products on products site
 
 async function displayJackets() {
     const jackets = await getProducts();
@@ -44,7 +24,7 @@ async function displayJackets() {
     for (i = 0; i < jackets.length; i++) {
         const jacket = jackets[i];
         
-
+        
         if(jacket.onSale){
           const jacketDiv = document.createElement("div");
           jacketDiv.classList.add("product");
@@ -68,7 +48,6 @@ async function displayJackets() {
           button.classList.add("button_small")
           button.textContent = "View";
 
-
           jacketsContainer.appendChild(image);
           jacketsContainer.appendChild(productTitle);
           jacketsContainer.appendChild(productPrice);
@@ -76,7 +55,51 @@ async function displayJackets() {
          
         }
     }
+
     }
 
 displayJackets();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Hardcoded HTML index and sortiment page
+//<div class = product>
+//<img
+//src="../images/ice_shell_jacket.png"
+//alt="Product image of Ice Shell Jacket"
+//class="product_image"
+///>
+//<p class="product_name">Ice Shell Jacket</p>
+//<p class="product_price">2699,-</p>
+//<a class="button_small" href="product.html">View</a>
+//CTA Button
+//</div>
+
+//Hardcoded HTML product page: sizes 
+//<div class="size">
+//<input type="radio" name="size" value="xs" id="xs" />
+//<label for="xs">XS</label>
+//</div>
+
+//Base URL API: https://api.noroff.dev/api/v1/ 
+
 
