@@ -6,19 +6,19 @@ import { getProducts } from "./api.js";
 
 let i = 0;
 
-export async function displayProducts() {
+async function displayProducts() {
     const jacketsInfo = await getProducts();
     const jacketsContainer = document.getElementById("jackets_container");
 
- 
     
     for (i = 0; i < jacketsInfo.length; i++) {
         const jacket = jacketsInfo[i];
         
+        
 
         if (jacket.onSale) {
             const jacketDiv = document.createElement("div");
-            jacketDiv.classList.add("jacket"); //Unsecure if this is the class that it's best to use. 
+            jacketDiv.classList.add("jacket"); 
 
             const image = document.createElement("img");
             image.src = jacket.image;
@@ -32,31 +32,33 @@ export async function displayProducts() {
             jacketPrice.classList.add("product_price");
             jacketPrice.innerHTML = `<span class="jacketSale">${jacket.price}</span> ${jacket.discountedPrice}`;
 
+
+            if (jacket.id) {
+                const jacketDetails = document.createElement("a");
+                jacketDetails.classList.add("button_small");
+                jacketDetails.addEventListener("click", () => {
+                    window.location.href = `product.html?id=${jacket.id}`;
+                });
+            }
+
             const button = document.createElement("a");
-            button.href = "#";
+            button.href = "http://127.0.0.1:5500/html/product.html";   // I think the link to the productpage with a uniqe jacket-Id is going here
             button.classList.add("button_small");
             button.textContent = "view";
+
 
             jacketsContainer.appendChild(image);
             jacketsContainer.appendChild(jacketTitle)
             jacketsContainer.appendChild(jacketPrice);
             jacketsContainer.appendChild(button);
-    
         }
 
+       
       
 }
 }
 
 displayProducts();
-
-
-
-
-
-
-
-
 
 
 

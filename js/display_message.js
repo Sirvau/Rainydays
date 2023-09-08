@@ -5,7 +5,7 @@ import {displayProducts} from "./script.js";
 
 
 const result = document.createElement("p");
-    result.classList.add("result");
+        result.classList.add("result");
 
 
 try { 
