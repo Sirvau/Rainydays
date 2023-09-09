@@ -1,23 +1,20 @@
 
-import {displayProducts} from "./script.js";
 
-//Error handeling
+//Error message
 
-
-const result = document.createElement("p");
-        result.classList.add("result");
-
-
-try { 
-    displayProducts();
-    
-} 
-catch (error) {
-    console.log("Unfortunately an error occured", error);
-    result.textcontent = "Unfortunately an error occured";
-}
-finally {
-    console.log("finally");
+function showingErrorMessage() {
+    const displayErrorMessage = document.getElementById("jackets_container");
+    displayErrorMessage.innerHTML = "<div> Unfortunately an error occured when loading the products </div>";
 }
 
-//Find out why this is not working. Work with error handeling
+showingErrorMessage();
+
+
+//Loading indicator
+
+function showingLoadingIndicator() {
+    const loadItemlist = document.getElementById("jackets_container");
+    loadItemlist.innerHTML = "<div>Loading...</div>";
+}
+
+showingLoadingIndicator();

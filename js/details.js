@@ -4,43 +4,29 @@ import { displayProducts } from "./script.js";
 
 displayProducts();
 
-const detailContainer = document.querySelector(".container");
 
-const url = "https://api.noroff.dev/api/v1/rainy-days/";
+function getJacketIdFromQuery() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get("id");
+}
 
 async function fetchJacketDetail() {
-
-    try {
-        const response = await fetch(url);
-        const details = await response.json();
-
-        console.log(details);
-
-        createHTML(details);
+    const JacketId = getJacketIdFromQuery();
+    if (!jacketId) {
+        return;
     }
 
-    catch(error) {
-        console.log(error);
-        detailContainer.innerHTML = message("error", error);
-    }
+
+const response = await fetch(`https://api.noroff.dev/api/v1/rainy-days/${jacketId}`);
+const jacketDetail = await response.json();
+
+const jacketDetailContainer = document.getElementById("single_jacket_container");
+
+jacketDetailContainer.innerHTML = `<h1> Jacket </h1>`
+
+fetchJacketDetail ();
 
 }
-
-fetchJacketDetail();
-
-
-
-function createHTML(details) {
-    detailContainer.innerHTML = `<img> ${details.image}</img>
-                                 <h1 class= headline_medium>${details.title}</h1>
-                                 <p> ${details.description} </p>
-                                 <p> ${details.price}</p>
-                                 `
-}
-
-createHTML();
-
-
 
 
 

@@ -4,14 +4,14 @@ import { getProducts } from "./api.js";
 
 //Display jackets and information on site
 
-let i = 0;
+
 
 async function displayProducts() {
     const jacketsInfo = await getProducts();
     const jacketsContainer = document.getElementById("jackets_container");
 
     
-    for (i = 0; i < jacketsInfo.length; i++) {
+    for (let i = 0; i < jacketsInfo.length; i++) {
         const jacket = jacketsInfo[i];
         
         
@@ -52,8 +52,6 @@ async function displayProducts() {
             jacketsContainer.appendChild(jacketPrice);
             jacketsContainer.appendChild(button);
         }
-
-       
       
 }
 }
