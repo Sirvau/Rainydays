@@ -1,34 +1,79 @@
 
 
-import { displayProducts } from "./script.js";
 
-displayProducts();
+
+function getJacketTitleFromQuery() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const title = urlParams.get("title");
+    return title;
+}
 
 
 function getJacketIdFromQuery() {
     const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get("id");
+    const id = urlParams.get("id");
+    return id;
 }
+
 
 async function fetchJacketDetail() {
-    const JacketId = getJacketIdFromQuery();
+    const jacketId = getJacketIdFromQuery();
+    const jacketTitle = getJacketTitleFromQuery();
     if (!jacketId) {
-        return;
+        throw new Error("Unfortunately an error occured when loading the jacket");
+
     }
 
+    try {
 
-const response = await fetch(`https://api.noroff.dev/api/v1/rainy-days/${jacketId}`);
-const jacketDetail = await response.json();
+        const response = await fetch(`https://api.noroff.dev/api/v1/rainy-days/${jacketId}`);
+        if(!response.ok) {
+            throw new Error("Unfortunately an error occured when loading the jacket");
+        }
+        const jacketDetail = await response.json();
 
-const jacketDetailContainer = document.getElementById("single_jacket_container");
+        const singleJacketContainer = document.createElement("div");
+        singleJacketContainer.classList.add("single_jacket_container");
 
-jacketDetailContainer.innerHTML = `<h1> Jacket </h1>`
+        const image = document.createElement("img");
+        image.src = singleJacketContainer.image;
+        image.alt = singleJacketContainer.description;
 
-fetchJacketDetail ();
+        const titleOfJacket = document.createElement("p");
+        titleOfJacket.classList.add("product_name");
+        titleOfJacket.innerHTML = `${jacket.title}`;
+
+        const descriptionOfJacket = document.createElement("p");
+        descriptionOfJacket.classList.add("product_name");
+        descriptionOfJacket.innerHTML = `${jacket.description}`;
+
+        const priceOfJacket = document.createElement("p");
+        priceOfJacket.classList.add("product_price");
+        priceOfJacket.innerHTML = `<span class="product_price">$${jacket.price}</span>`;
+        
+        const button = document.createElement("a");
+            button.href = "`/shoppingbag.html;" 
+            button.classList.add("button_large");
+            button.textContent = "View";
+
+            
+            singleJacketContainer.appendChild(image);
+            singleJacketContainer.appendChild(titleOfJacket);
+            singleJacketContainer.appendChild(descriptionOfJacket);
+            singleJacketContainer.appendChild(priceOfJacket);
+            singleJacketContainer.appendChild(button);
+
+
+        //const singleJacketContainer = document.getElementById("single_jacket_container");
+
+    }
+    catch (error) {
+        showError(error.message);
+    }
 
 }
 
-
+fetchJacketDetail()
 
 
 
