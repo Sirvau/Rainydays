@@ -7,6 +7,6 @@ export function showError(message) {
 
 export function showLoadingIndicator() {
     const loadItemlist = document.getElementById("jackets_container");
-    loadItemlist.innerHTML = "<div>Loading...</div>";
+    loadItemlist.innerHTML = `<div>Loading...</div>`;
 }
 

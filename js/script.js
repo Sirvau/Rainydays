@@ -1,5 +1,6 @@
 
 import { getProducts } from "./api.js";
+import { showError } from "./display_message.js";
 
 
 
@@ -7,8 +8,10 @@ import { getProducts } from "./api.js";
 
 
 async function displayProducts(){
+    try {
     const jacketsInfo = await getProducts();
     const jacketsContainer = document.getElementById("jackets_container");
+    jacketsContainer.innerHTML = "";
 
     
     for (let i = 0; i < jacketsInfo.length; i++) {
@@ -50,8 +53,13 @@ async function displayProducts(){
             jacketsContainer.appendChild(jacketPrice);
             jacketsContainer.appendChild(button);
         }
-      
+    }   catch (error) {
+        showError();
+    
+    }
+
 }
+
 
 displayProducts();
 
