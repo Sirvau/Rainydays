@@ -1,45 +1,29 @@
 
+import {showError} from "./display_message.js";
+import { showLoadingIndicator } from "./display_message.js";
 
-function showError(message) {
-    const errorContainer = document.getElementById("jackets_container");
-    errorContainer.innerHTML = `<h3>Unfortunately and error occured...</h3>`; 
-}
-
-
-function showLoadingIndicator() {
-    const loadItemlist = document.getElementById("jackets_container");
-    loadItemlist.innerHTML = "<div>Loading...</div>";
-}
+const apiAllProducts = "https://api.noroff.dev/api/v1/rainy-days";
 
 
-//Function to fetch API data and populate the product list
 
 
 
 export async function getProducts() {
-    //Display loading indicator
     showLoadingIndicator();
     try {
-        const response = await fetch("https://api.noroff.dev/api/v1/rainy-days");
-        if(response.ok){
-            showLoadingIndicator();
+        const apiCallResponse = await fetch(apiAllProducts);
+        if(!apiCallResponse.ok){
+            showError();
+            throw new Error("Unfortunately something went wrong");
         }
-        if(!response.ok){
-            throw showError();
-        }
-        const result = await response.json();
-        return result;   
+        const apiCallResult = await apiCallResponse.json();
+        return apiCallResult;   
     }   catch (error) {
         throw error;
     }
 }
   
-    getProducts();
+
 
    
-
-
-
-//THIS ERROR HANDELING IS NOT WORKING... TRIED PUTTING IT IN THE FUNCTION, DID NOT WORK. WHY? 
-
 

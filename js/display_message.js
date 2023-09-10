@@ -1,20 +1,12 @@
 
-
-//Error message
-
-function showingErrorMessage() {
-    const displayErrorMessage = document.getElementById("jackets_container");
-    displayErrorMessage.innerHTML = "<div> Unfortunately an error occured when loading the products </div>";
+export function showError(message) {
+    const errorContainer = document.getElementById("jackets_container");
+    errorContainer.innerHTML = `<h3>Error: ${message}</h3>`; 
 }
 
-showingErrorMessage();
 
-
-//Loading indicator
-
-function showingLoadingIndicator() {
+export function showLoadingIndicator() {
     const loadItemlist = document.getElementById("jackets_container");
     loadItemlist.innerHTML = "<div>Loading...</div>";
 }
 
-showingLoadingIndicator();

@@ -2,11 +2,12 @@
 import { getProducts } from "./api.js";
 
 
+
+
 //Display jackets and information on site
 
 
-
-async function displayProducts() {
+async function displayProducts(){
     const jacketsInfo = await getProducts();
     const jacketsContainer = document.getElementById("jackets_container");
 
