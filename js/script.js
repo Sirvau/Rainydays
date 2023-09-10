@@ -3,7 +3,6 @@ import { getProducts } from "./api.js";
 
 
 
-
 //Display jackets and information on site
 
 

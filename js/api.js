@@ -2,9 +2,8 @@
 import {showError} from "./display_message.js";
 import { showLoadingIndicator } from "./display_message.js";
 
+
 const apiAllProducts = "https://api.noroff.dev/api/v1/rainy-days";
-
-
 
 
 
@@ -22,8 +21,5 @@ export async function getProducts() {
         throw error;
     }
 }
-  
-
-
-   
+     
 

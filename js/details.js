@@ -1,5 +1,5 @@
-
-
+import {showError} from "./display_message.js"; 
+import { showLoadingIndicator } from "./display_message.js";
 
 
 function getJacketTitleFromQuery() {
@@ -15,18 +15,25 @@ function getJacketIdFromQuery() {
     return id;
 }
 
+const jacketId = getJacketIdFromQuery();
+const jacketTitle = getJacketTitleFromQuery();
+
+
+
+
 
 async function fetchJacketDetail() {
-    const jacketId = getJacketIdFromQuery();
-    const jacketTitle = getJacketTitleFromQuery();
+    showLoadingIndicator();
+    
     if (!jacketId) {
-        throw new Error("Unfortunately an error occured when loading the jacket");
+        throw showError();
 
     }
 
-    try {
+    try { 
 
         const response = await fetch(`https://api.noroff.dev/api/v1/rainy-days/${jacketId}`);
+        
         if(!response.ok) {
             throw new Error("Unfortunately an error occured when loading the jacket");
         }
@@ -41,20 +48,20 @@ async function fetchJacketDetail() {
 
         const titleOfJacket = document.createElement("p");
         titleOfJacket.classList.add("product_name");
-        titleOfJacket.innerHTML = `${jacket.title}`;
+        titleOfJacket.innerHTML = `${jacketDetail.title}`;
 
         const descriptionOfJacket = document.createElement("p");
         descriptionOfJacket.classList.add("product_name");
-        descriptionOfJacket.innerHTML = `${jacket.description}`;
+        descriptionOfJacket.innerHTML = `${jacketDetail.description}`;
 
         const priceOfJacket = document.createElement("p");
         priceOfJacket.classList.add("product_price");
-        priceOfJacket.innerHTML = `<span class="product_price">$${jacket.price}</span>`;
+        priceOfJacket.innerHTML = `<span class="product_price">$${jacketDetail.price}</span>`;
         
         const button = document.createElement("a");
-            button.href = "`/shoppingbag.html;" 
-            button.classList.add("button_large");
-            button.textContent = "View";
+        button.classList.add("button_large")
+        button.href = "`/shoppingbag.html;" 
+        button.textContent = "Add to bag";
 
             
             singleJacketContainer.appendChild(image);
@@ -62,9 +69,6 @@ async function fetchJacketDetail() {
             singleJacketContainer.appendChild(descriptionOfJacket);
             singleJacketContainer.appendChild(priceOfJacket);
             singleJacketContainer.appendChild(button);
-
-
-        //const singleJacketContainer = document.getElementById("single_jacket_container");
 
     }
     catch (error) {
