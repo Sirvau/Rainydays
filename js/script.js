@@ -43,7 +43,7 @@ async function displayProducts(){
             }
 
             const button = document.createElement("a");
-            button.href = `product.html?id=${jacket.id}&title=${jacket.title}`; 
+            button.href = `../html/product.html?id=${jacket.id}&title=${jacket.title}`; 
             button.classList.add("button_small");
             button.textContent = "View";
 
