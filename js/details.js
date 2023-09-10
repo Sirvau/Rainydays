@@ -2,6 +2,8 @@ import {showError} from "./display_message.js";
 import { showLoadingIndicator } from "./display_message.js";
 
 
+
+
 function getJacketTitleFromQuery() {
     const urlParams = new URLSearchParams(window.location.search);
     const title = urlParams.get("title");
@@ -20,11 +22,9 @@ const jacketTitle = getJacketTitleFromQuery();
 
 
 
-
-
 async function fetchJacketDetail() {
     showLoadingIndicator();
-    
+
     if (!jacketId) {
         throw showError();
 
@@ -43,8 +43,8 @@ async function fetchJacketDetail() {
         singleJacketContainer.classList.add("single_jacket_container");
 
         const image = document.createElement("img");
-        image.src = singleJacketContainer.image;
-        image.alt = singleJacketContainer.description;
+        image.src = jacketDetail.image;
+        image.alt = jacketDetail.description;
 
         const titleOfJacket = document.createElement("p");
         titleOfJacket.classList.add("product_name");
@@ -82,38 +82,3 @@ fetchJacketDetail()
 
 
 
-
-
-
-
-
-
-
-
-
-//<section id="single_jacket_container" class="container">
-//<h1 class="headline_medium">Ice Shell jacket</h1>
-//<p>
-//Versatile, weather protective and fully equipped shell jacket for
-  //women.
-//</p>
-//<p>Made for all kinds of adventures in forests and mountains.</p>
-//</section>
-//</div>
-//<section class="container">
-//<div class="product"></div>
-//<div>
-//<div class="size">
-//</div>
-//<div class="size">
-//</div>
-//<div class="size">
-//</div>
-//<div class="size">
-//</div>
-//<div class="size">
-//</div>
-//</section>
-//<div>
-//<a class="button_medium" href="shoppingbag.html">Add to bag</a>
-//</div>

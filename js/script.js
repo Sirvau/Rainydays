@@ -32,9 +32,7 @@ async function displayProducts(){
         const jacketDetails = document.createElement("a");
         jacketDetails.classList.add("jacketDetails");
         jacketDetails.addEventListener("click", () => {
-        window.location.href = `product.html?id=${jacket.id}&title=${jacket.title}`;
-    
-            
+        window.location.href = `product.html?id=${jacket.id}&title=${jacket.title}`;            
         });
 
         if (jacket.onSale) {
@@ -51,8 +49,6 @@ async function displayProducts(){
             jacketsContainer.appendChild(jacketTitle)
             jacketsContainer.appendChild(jacketPrice);
             jacketsContainer.appendChild(button);
-
-            
         }
       
 }
