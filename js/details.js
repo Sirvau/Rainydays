@@ -1,5 +1,5 @@
 import {showError} from "./display_message.js"; 
-import { showLoadingIndicator } from "./display_message.js";
+
 
 
 
@@ -23,7 +23,7 @@ const jacketTitle = getJacketTitleFromQuery();
 
 
 async function fetchJacketDetail() {
-    showLoadingIndicator();
+   
 
     if (!jacketId) {
         throw showError();
@@ -38,6 +38,8 @@ async function fetchJacketDetail() {
             throw new Error("Unfortunately an error occured when loading the jacket");
         }
         const jacketDetail = await response.json();
+
+        const mainContainer = document.querySelector(".product_page");
 
         const singleJacketContainer = document.createElement("div");
         singleJacketContainer.classList.add("single_jacket_container");
@@ -63,7 +65,7 @@ async function fetchJacketDetail() {
         button.href = "`/shoppingbag.html;" 
         button.textContent = "Add to bag";
 
-            
+            mainContainer.appendChild(singleJacketContainer);
             singleJacketContainer.appendChild(image);
             singleJacketContainer.appendChild(titleOfJacket);
             singleJacketContainer.appendChild(descriptionOfJacket);
